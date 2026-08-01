@@ -4,7 +4,7 @@ const products = [
 {
 name:"Smart Kitchen Organizer",
 
-image:"images/product1.jpg",
+image:"product1.jpg",
 
 category:"Kitchen",
 
