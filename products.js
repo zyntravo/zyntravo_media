@@ -23,7 +23,7 @@ link:"https://amzn.to/4yN0Sgd"
 {
 name:"Premium Beauty Kit",
 
-image:"images/product2.jpg",
+image:"product2.jpg",
 
 category:"Beauty",
 
@@ -42,7 +42,7 @@ link:"https://amzn.to/4br71EG"
 {
 name:"Wireless Bluetooth Gadget",
 
-image:"images/product3.jpg",
+image:"product3.jpg",
 
 category:"Electronics",
 
@@ -61,7 +61,7 @@ link:"https://amzn.to/3TnRNdw"
 {
 name:"Trending Fashion Watch",
 
-image:"images/product4.jpg",
+image:"product4.jpg",
 
 category:"Fashion",
 
