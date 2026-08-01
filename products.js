@@ -14,7 +14,7 @@ oldPrice:"₹1999",
 
 price:"₹799",
 
-link:"YOUR-AFFILIATE-LINK"
+link:"https://amzn.to/4yN0Sgd"
 
 },
 
