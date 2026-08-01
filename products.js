@@ -33,7 +33,7 @@ oldPrice:"₹1499",
 
 price:"₹499",
 
-link:"YOUR-AFFILIATE-LINK"
+link:"https://amzn.to/4br71EG"
 
 },
 
@@ -48,11 +48,11 @@ category:"Electronics",
 
 rating:"⭐⭐⭐⭐⭐ 4.9",
 
-oldPrice:"₹2999",
+oldPrice:"₹3999",
 
-price:"₹1299",
+price:"₹2439",
 
-link:"YOUR-AFFILIATE-LINK"
+link:"https://amzn.to/3TnRNdw"
 
 },
 
@@ -67,11 +67,11 @@ category:"Fashion",
 
 rating:"⭐⭐⭐⭐ 4.6",
 
-oldPrice:"₹1999",
+oldPrice:"₹5000",
 
-price:"₹899",
+price:"₹3800",
 
-link:"YOUR-AFFILIATE-LINK"
+link:"https://amzn.to/455xHqX"
 
 }
 
