@@ -1,0 +1,12 @@
+# ==================================
+# Deal Finder 2.0 - robots.txt
+# ==================================
+
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+Sitemap: https://zyntravo.github.io/deal-finder-v2/sitemap.xml
