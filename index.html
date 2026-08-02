@@ -2,99 +2,162 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+    <title>Deal Finder | Best Amazon Deals & Product Reviews</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the best Amazon deals, product reviews, buying guides and trending offers.">
 
-<title>Deal Finder - Best Online Deals</title>
+    <meta name="keywords"
+        content="Amazon Deals, Best Deals, Product Reviews, Electronics, Kitchen, Fashion">
 
-<meta name="description" content="Find trending products and best online deals.">
+    <meta name="author" content="Deal Finder">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="images/favicon.png">
 
 </head>
 
-
 <body>
 
-
 <header>
+
+<div class="container">
 
 <div class="logo">
 🛍️ Deal Finder
 </div>
 
-
 <nav>
 
-<a href="#">Home</a>
-<a href="#">Kitchen</a>
-<a href="#">Beauty</a>
-<a href="#">Fashion</a>
-<a href="#">Electronics</a>
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#categories">Categories</a></li>
+
+<li><a href="#products">Deals</a></li>
+
+<li><a href="#reviews">Reviews</a></li>
+
+<li><a href="#blog">Blog</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
 
 </nav>
+
+<div class="header-right">
+
+<input
+type="search"
+id="searchBox"
+placeholder="Search Products...">
+
+<button id="darkModeBtn">
+🌙
+</button>
+
+</div>
+
+</div>
 
 </header>
 
 
-
-<section class="search-box">
-
-<input 
-type="search"
-id="searchBox"
-placeholder="🔍 Search Products">
-
-</section>
-
-
-
-
 <section class="hero">
 
+<div class="container hero-content">
+
+<span class="hero-tag">
+🔥 Daily Updated Amazon Deals
+</span>
+
 <h1>
-🔥 Best Deals At One Place
+
+Save More On Every Purchase
+
 </h1>
 
 <p>
-Find Trending Products With Amazing Offers
+
+Discover Trending Products,
+Best Sellers,
+Buying Guides
+and Exclusive Deals
+in one place.
+
 </p>
 
+<div class="hero-buttons">
 
-<button>
-Explore Deals
-</button>
+<a href="#products" class="primary-btn">
+Shop Deals
+</a>
+
+<a href="#categories" class="secondary-btn">
+Browse Categories
+</a>
+
+</div>
+
+</div>
 
 </section>
+<!-- ===========================
+     CATEGORIES
+=========================== -->
 
+<section class="categories" id="categories">
 
+<div class="container">
 
-
-<section>
-
-<h2>
-🛒 Shop By Category
+<h2 class="section-title">
+🛍 Shop By Category
 </h2>
 
+<div class="category-grid">
 
-<div class="categories">
-
-<div>
-🏠 Home & Kitchen
+<div class="category-card">
+<span>📱</span>
+<h3>Electronics</h3>
+<p>Latest Gadgets</p>
 </div>
 
-<div>
-💄 Beauty
+<div class="category-card">
+<span>🏠</span>
+<h3>Home & Kitchen</h3>
+<p>Daily Essentials</p>
 </div>
 
-<div>
-👕 Fashion
+<div class="category-card">
+<span>💄</span>
+<h3>Beauty</h3>
+<p>Beauty Products</p>
 </div>
 
-<div>
-📱 Electronics
+<div class="category-card">
+<span>👕</span>
+<h3>Fashion</h3>
+<p>Trending Fashion</p>
+</div>
+
+<div class="category-card">
+<span>⌚</span>
+<h3>Accessories</h3>
+<p>Smart Watches & More</p>
+</div>
+
+<div class="category-card">
+<span>🎮</span>
+<h3>Gaming</h3>
+<p>Gaming Accessories</p>
+</div>
+
 </div>
 
 </div>
@@ -102,133 +165,498 @@ Explore Deals
 </section>
 
 
+<!-- ===========================
+     OFFER BANNER
+=========================== -->
 
+<section class="offer-banner">
 
-<section>
+<div class="container">
 
 <h2>
+🔥 Mega Sale - Up To 70% OFF
+</h2>
+
+<p>
+
+Limited Time Deals On
+Electronics,
+Kitchen,
+Fashion &
+Beauty Products.
+
+</p>
+
+<a href="#products" class="offer-btn">
+
+Shop Now
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+     FEATURES
+=========================== -->
+
+<section class="features">
+
+<div class="container">
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+🚚
+
+<h3>Fast Delivery</h3>
+
+<p>
+Quick delivery on selected products.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+⭐
+
+<h3>Top Rated</h3>
+
+<p>
+Highly rated products by customers.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+💰
+
+<h3>Best Deals</h3>
+
+<p>
+Daily updated discounts and offers.
+</p>
+
+</div>
+
+<div class="feature-card">
+
+🔒
+
+<h3>Secure Shopping</h3>
+
+<p>
+Trusted affiliate shopping experience.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+     TODAY'S BEST DEALS
+=========================== -->
+
+<section class="products" id="products">
+
+<div class="container">
+
+<h2 class="section-title">
 🔥 Today's Best Deals
 </h2>
 
+<p class="section-subtitle">
+Handpicked Amazon Deals Updated Daily
+</p>
 
-<div class="product-container" id="products">
+<div class="products-grid" id="productContainer">
+
+<!-- Product Card 1 -->
+
+<div class="product-card">
+
+<div class="discount-badge">
+25% OFF
+</div>
+
+<div class="wishlist">
+❤
+</div>
+
+<img src="images/headphone.webp"
+alt="Wireless Headphones"
+loading="lazy">
+
+<div class="product-info">
+
+<h3>
+Wireless Bluetooth Headphones
+</h3>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(4.8)</span>
+</div>
+
+<div class="price">
+
+<span class="old-price">
+₹3,999
+</span>
+
+<span class="new-price">
+₹2,999
+</span>
+
+</div>
+
+<a href="#"
+class="buy-btn">
+Check Price
+</a>
+
+</div>
 
 </div>
 
 
+<!-- Product Card 2 -->
+
+<div class="product-card">
+
+<div class="discount-badge">
+40% OFF
+</div>
+
+<div class="wishlist">
+❤
+</div>
+
+<img src="images/airfryer.webp"
+alt="Air Fryer"
+loading="lazy">
+
+<div class="product-info">
+
+<h3>
+Digital Air Fryer
+</h3>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(4.7)</span>
+</div>
+
+<div class="price">
+
+<span class="old-price">
+₹7,999
+</span>
+
+<span class="new-price">
+₹4,799
+</span>
+
+</div>
+
+<a href="#"
+class="buy-btn">
+Check Price
+</a>
+
+</div>
+
+</div>
+
+
+<!-- Product Card 3 -->
+
+<div class="product-card">
+
+<div class="discount-badge">
+35% OFF
+</div>
+
+<div class="wishlist">
+❤
+</div>
+
+<img src="images/smartwatch.webp"
+alt="Smart Watch"
+loading="lazy">
+
+<div class="product-info">
+
+<h3>
+Smart Watch
+</h3>
+
+<div class="rating">
+⭐⭐⭐⭐☆
+<span>(4.6)</span>
+</div>
+
+<div class="price">
+
+<span class="old-price">
+₹5,999
+</span>
+
+<span class="new-price">
+₹3,899
+</span>
+
+</div>
+
+<a href="#"
+class="buy-btn">
+Check Price
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 
+<!-- ===========================
+     NEWSLETTER
+=========================== -->
 
+<section class="newsletter">
 
-
-<section>
+<div class="container">
 
 <h2>
-📝 Buying Guides
+📩 Never Miss a Deal
 </h2>
 
-
-<div class="blog-container">
-
-
-<div class="blog-card">
-
-<h3>
-Best Kitchen Products
-</h3>
-
 <p>
-Useful products for your home.
+Subscribe to get the latest deals directly in your inbox.
 </p>
 
+<form class="newsletter-form">
+
+<input
+type="email"
+placeholder="Enter your email">
+
+<button type="submit">
+Subscribe
+</button>
+
+</form>
+
 </div>
 
+<<!-- ===========================
+     CUSTOMER REVIEWS
+=========================== -->
 
+<section class="reviews" id="reviews">
 
-<div class="blog-card">
+<div class="container">
 
-<h3>
-Trending Gadgets
-</h3>
+<h2 class="section-title">
+⭐ Customer Reviews
+</h2>
 
+<div class="review-grid">
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
 <p>
-Latest products and deals.
+Amazing website! I found great Amazon deals.
 </p>
+<h4>- Rahul Sharma</h4>
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
+<p>
+Very clean design and easy to find products.
+</p>
+<h4>- Priya Verma</h4>
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐☆
+<p>
+Daily deals are really useful.
+</p>
+<h4>- Aman Singh</h4>
+</div>
 
 </div>
 
-
 </div>
-
 
 </section>
 
 
+<!-- ===========================
+     BLOG SECTION
+=========================== -->
 
+<section class="blog" id="blog">
 
+<div class="container">
 
-<section class="trust">
+<h2 class="section-title">
+📝 Latest Buying Guides
+</h2>
 
+<div class="blog-grid">
 
-<div>
-⭐ Top Rated Products
+<div class="blog-card">
+
+<img src="images/blog1.webp"
+alt="Buying Guide">
+
+<h3>
+Best Wireless Headphones Under ₹3000
+</h3>
+
+<p>
+Complete buying guide for budget headphones.
+</p>
+
+<a href="#">
+Read More →
+</a>
+
 </div>
 
+<div class="blog-card">
 
-<div>
-🔒 Safe Shopping
+<img src="images/blog2.webp"
+alt="Kitchen">
+
+<h3>
+Top Kitchen Gadgets
+</h3>
+
+<p>
+Best Amazon kitchen products this year.
+</p>
+
+<a href="#">
+Read More →
+</a>
+
 </div>
 
-
-<div>
-🔥 Trending Deals
 </div>
 
+</div>
 
 </section>
 
 
+<!-- ===========================
+     CONTACT
+=========================== -->
 
+<section class="contact" id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+📩 Contact Us
+</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email"
+required>
+
+<textarea
+placeholder="Your Message"></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- ===========================
+     FOOTER
+=========================== -->
 
 <footer>
 
+<div class="container">
 
-<h3>
+<div class="footer-logo">
+
 🛍️ Deal Finder
-</h3>
 
+</div>
 
 <p>
-Find best deals and recommended products.
+
+Find the Best Deals,
+Product Reviews
+and Buying Guides.
+
 </p>
 
+<div class="footer-links">
 
-<a href="#">
-Privacy Policy
-</a>
+<a href="about.html">About</a>
 
+<a href="privacy.html">Privacy Policy</a>
 
-<a href="#">
+<a href="terms.html">Terms</a>
+
+<a href="disclaimer.html">
 Affiliate Disclosure
 </a>
 
+<a href="contact.html">
+Contact
+</a>
 
-<p>
-© 2026 Deal Finder
+</div>
+
+<p class="copyright">
+
+© 2026 Deal Finder.
+All Rights Reserved.
+
 </p>
 
+</div>
 
 </footer>
 
-
-
-
 <script src="products.js"></script>
-
 <script src="script.js"></script>
 
-
 </body>
-
-</html>
+</html>/section>
