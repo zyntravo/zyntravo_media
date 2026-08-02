@@ -1,133 +1,172 @@
-const productContainer = 
-document.getElementById("products");
+/* =========================
+   DEAL FINDER 2.0
+   script.js
+========================= */
+
+// Product Load
+
+const productContainer = document.getElementById("productContainer");
+
+function loadProducts(list = products){
+
+    if(!productContainer) return;
+
+    productContainer.innerHTML = "";
+
+    list.forEach(product=>{
+
+        productContainer.innerHTML += `
+
+        <div class="product-card">
+
+            <div class="discount-badge">
+                SALE
+            </div>
+
+            <div class="wishlist">
+                ❤️
+            </div>
+
+            <img src="${product.image}"
+                 alt="${product.name}"
+                 loading="lazy">
+
+            <div class="product-info">
+
+                <h3>${product.name}</h3>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐ (${product.rating})
+                </div>
+
+                <div class="price">
+
+                    <span class="old-price">
+                    ${product.oldPrice}
+                    </span>
+
+                    <span class="new-price">
+                    ${product.price}
+                    </span>
+
+                </div>
+
+                <a href="${product.link}"
+                   target="_blank"
+                   class="buy-btn">
+
+                   Buy Now
+
+                </a>
+
+            </div>
+
+        </div>
+
+        `;
+
+    });
+
+}
+
+loadProducts();
 
 
+// ========================
+// SEARCH
+// ========================
 
-function displayProducts(items){
+const searchBox = document.getElementById("searchBox");
 
+if(searchBox){
 
-productContainer.innerHTML = "";
+searchBox.addEventListener("keyup",()=>{
 
+const value = searchBox.value.toLowerCase();
 
+const filtered = products.filter(item=>
 
-items.forEach(product => {
+item.name.toLowerCase().includes(value) ||
 
+item.category.toLowerCase().includes(value)
 
-productContainer.innerHTML += `
+);
 
-
-<div class="product-card">
-
-
-<span class="badge">
-🔥 Best Deal
-</span>
-
-
-
-<img src="${product.image}" 
-alt="${product.name}">
-
-
-
-<h3>
-${product.name}
-</h3>
-
-
-
-<div class="rating">
-${product.rating}
-</div>
-
-
-
-<p>
-
-<span class="old-price">
-${product.oldPrice}
-</span>
-
-
-<br>
-
-
-<span class="sale-price">
-${product.price}
-</span>
-
-
-</p>
-
-
-
-<a href="${product.link}" 
-target="_blank">
-
-
-<button>
-
-🛒 Check Price
-
-</button>
-
-
-</a>
-
-
-
-</div>
-
-
-`;
+loadProducts(filtered);
 
 });
-
 
 }
 
 
+// ========================
+// DARK MODE
+// ========================
+
+const darkBtn = document.getElementById("darkModeBtn");
+
+if(darkBtn){
+
+darkBtn.onclick=()=>{
+
+document.body.classList.toggle("dark");
+
+};
+
+}
 
 
-// Load Products
+// ========================
+// BACK TO TOP
+// ========================
 
-displayProducts(products);
+const topBtn=document.getElementById("topBtn");
 
+window.onscroll=function(){
 
+if(!topBtn) return;
 
+if(document.documentElement.scrollTop>300){
 
+topBtn.style.display="block";
 
-// Search Function
+}else{
 
+topBtn.style.display="none";
 
-document
-.getElementById("searchBox")
-.addEventListener("input", function(){
+}
 
+};
 
+if(topBtn){
 
-let value = 
-this.value.toLowerCase();
+topBtn.onclick=function(){
 
+window.scrollTo({
 
+top:0,
 
-let filteredProducts = 
-products.filter(product =>
-
-
-
-product.name
-.toLowerCase()
-.includes(value)
-
-
-
-);
-
-
-
-displayProducts(filteredProducts);
-
-
+behavior:"smooth"
 
 });
+
+};
+
+}
+
+
+// ========================
+// IMAGE GALLERY
+// ========================
+
+function changeImage(img){
+
+const main=document.getElementById("mainImage");
+
+if(main){
+
+main.src=img.src;
+
+}
+
+}
